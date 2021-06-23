@@ -22,4 +22,9 @@ $router->post('/register','AccountsController@register');
 $router->post('/login','AccountsController@login');
 
 
+$router->get('/testxd',function () {
+    return 'hey friend';
+});
+
+
 $router->get('/private', ['middleware' => 'auth',  "DummyController@test"]);
