@@ -26,5 +26,10 @@ $router->get('/testxd',function () {
     return 'hey friend';
 });
 
+$router->get('/testxd3',function () {
+    return 'hey friend';
+});
+
+
 
 $router->get('/private', ['middleware' => 'auth',  "DummyController@test"]);
